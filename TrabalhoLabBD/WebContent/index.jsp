@@ -39,12 +39,12 @@
 <option>Alegoria</option>
 <option>Bateria</option>
 <option>Comissão de Frente</option>
+<option>Enredo</option>
 <option>Evolução</option>
 <option>Fantasia</option>
 <option>Harmonia</option>
 <option>Mestre-Sala</option>
-<option>Porta-Bandeira e Enredo</option>
-<option>Samba-Enredo</option>
+<option>Porta-Bandeira e Samba-Enredo</option>
 </select><form style="height: 56px; ">
 <label>Nota: </label><input style="width: 106px; " /><input type="submit" value="Inserir" style="width: 74px; " />
 
