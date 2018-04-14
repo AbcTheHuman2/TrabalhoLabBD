@@ -20,6 +20,7 @@ Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
 c = DriverManager.getConnection(String.format("jdbc:jtds:sqlserver://%s:1433;database=%s;user=%s;password=%s;", hostName, dbName, user, senha));
 
+System.out.println("Conexão OK");
 return c;
 }
 
