@@ -2,7 +2,6 @@ package controller;
 
 import java.io.IOException;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,7 +40,6 @@ public class EscolaController extends HttpServlet {
 		
 		IGenericDao gDao = new GenericDao();
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		@SuppressWarnings("unchecked")
 		List<Escola> lista = (List<Escola>)getServletContext().getAttribute("LISTA");
 		if (lista == null) {
