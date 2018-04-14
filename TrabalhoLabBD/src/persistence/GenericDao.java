@@ -25,7 +25,7 @@ public class GenericDao implements IGenericDao {
 	}
 	
 	@Override
-	public void adicionar(Escola es) throws ClassNotFoundException, SQLException {
+	public void inserir(Escola es) throws ClassNotFoundException, SQLException {
 		Connection con = getConnection();
 		try {
 			PreparedStatement pstm = con.prepareStatement(
