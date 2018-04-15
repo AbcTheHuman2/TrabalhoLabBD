@@ -5,54 +5,19 @@ import java.io.Serializable;
 public class Escola implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private long id;
-	private String nome_escola = "";
-	private String jurado = "";
-	private String quesito = "";
-	private float nota;
+	private String escola;
+	private float total;
 	
-	public long getId() {
-		return id;
+	public String getEscola() {
+		return escola;
 	}
-	
-	public void setId(long id) {
-		this.id = id;
+	public void setEscola(String escola) {
+		this.escola = escola;
 	}
-	
-	public String getNome_escola() {
-		return nome_escola;
+	public float getTotal() {
+		return total;
 	}
-	
-	public void setNome_escola(String nome_escola) {
-		this.nome_escola = nome_escola;
-	}
-	
-	public String getJurado() {
-		return jurado;
-	}
-	
-	public void setJurado(String jurado) {
-		this.jurado = jurado;
-	}
-	
-	public String getQuesito() {
-		return quesito;
-	}
-	
-	public void setQuesito(String quesito) {
-		this.quesito = quesito;
-	}
-	
-	public float getNota() {
-		return nota;
-	}
-	
-	public void setNota(float nota) {
-		this.nota = nota;
-	}
-	
-	@Override
-	public String toString() {
-		return super.toString();
+	public void setTotal(float total) {
+		this.total = total;
 	}
 }

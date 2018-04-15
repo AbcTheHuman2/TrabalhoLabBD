@@ -45,15 +45,15 @@
 	<option>5° Jurado</option>
 	</select>
 	</form><label>Quesito: </label><select style="width: 163px; ">
-	<option>Alegoria</option>
-	<option>Bateria</option>
 	<option>Comissão de Frente</option>
-	<option>Enredo</option>
 	<option>Evolução</option>
 	<option>Fantasia</option>
+	<option>Bateria</option>
+	<option>Alegoria</option>
 	<option>Harmonia</option>
-	<option>Mestre-Sala</option>
-	<option>Porta-Bandeira e Samba-Enredo</option>
+	<option>Samba-Enredo</option>
+	<option>Mestre-Sala e Porta-Bandeira</option>
+	<option>Enredo</option>
 	</select><form style="height: 56px; ">
 	<label>Nota: </label><input style="width: 106px; " /><input type="submit" value="Inserir" style="width: 74px; " />
 

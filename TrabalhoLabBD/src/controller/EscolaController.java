@@ -38,8 +38,6 @@ public class EscolaController extends HttpServlet {
 		String txtCmd = request.getParameter("cmd");
 		System.out.println("O botão " + txtCmd + " foi apertado");
 		
-		IGenericDao gDao = new GenericDao();
-		
 		@SuppressWarnings("unchecked")
 		List<Escola> lista = (List<Escola>)getServletContext().getAttribute("LISTA");
 		if (lista == null) {
@@ -48,20 +46,7 @@ public class EscolaController extends HttpServlet {
 		}
 		String message = null;
 		if ("inserir".equals(txtCmd)) {
-			Escola es = new Escola();
-			es.setId(Long.parseLong(txtId));
-			es.setNome_escola(txtNomeEscola);
-			es.setJurado(txtJurado);
-			es.setQuesito(txtQuesito);
-			es.setNota(Float.parseFloat(txtNota));
-			try {
-				gDao.inserir(es);
-			} catch (ClassNotFoundException e) {
-				e.printStackTrace();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-			message = String.format("Nota cadastrada", es.toString());
+			
 		} else if ("verTotal".equals(txtCmd)) {
 			
 		} else if ("verQuesito".equals(txtCmd)) {
