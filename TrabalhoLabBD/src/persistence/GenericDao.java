@@ -10,12 +10,10 @@ private Connection c;
 
 public Connection getConnection() throws ClassNotFoundException, SQLException {
 
-String hostName = "localhost";
-String dbName ="trabalholabbd";
-String user ="trabalho";
-String senha ="123";
-Class.forName("com.mysql.jdbc.Driver");
-c = DriverManager.getConnection("jdbc:mysql://"+hostName+":3306/"+dbName, user, senha);
+Class.forName("net.sourceforge.jtds.jdbc.Driver");
+c = DriverManager.getConnection(
+		"jdbc:jtds:sqlserver://127.0.0.1:1433;DatabaseName=trabalholabbd;",
+		"trabalho", "123");
 
 return c;
 }

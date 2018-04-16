@@ -20,15 +20,15 @@ public class NotaDAO {
 	
 	public NotaDAO() {
 		GenericDao gDao = new GenericDao();
-		try {
-			c = gDao.getConnection();
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+			try {
+				c = gDao.getConnection();
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 	}
 	
 	public String[] carregarEscolas() throws SQLException {
@@ -41,6 +41,7 @@ public class NotaDAO {
 			escolas[i] = rs.getString("nome_escola");
 			i++;
 		}
+		
 		return escolas;
 	}
 	
