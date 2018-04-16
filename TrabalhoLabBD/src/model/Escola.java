@@ -1,10 +1,7 @@
 package model;
 
-import java.io.Serializable;
+public class Escola {
 
-public class Escola implements Serializable {
-
-	private static final long serialVersionUID = 1L;
 	private String escola;
 	private float total;
 	
